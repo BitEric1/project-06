@@ -1,0 +1,27 @@
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="34" height="34" fill="#E5E5E5"/>
+<g id="Mobile Version" clip-path="url(#clip0_0_1)">
+<rect width="390" height="7649" transform="translate(-337 -25)" fill="white"/>
+<g id="Header">
+<g id="Group 18421">
+<rect id="Rectangle 582" x="-337" y="-25" width="390" height="844" fill="#FBFAFF"/>
+</g>
+<g id="Nav">
+<g id="Group 18420">
+<g id="Group 18381">
+<circle id="Ellipse 1086" opacity="0.2" cx="17" cy="17" r="16" stroke="#5D3BEE"/>
+<g id="Icon">
+<path id="Vector" d="M10 20H25" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M10 14H25" stroke="#5D3BEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="390" height="7649" fill="white" transform="translate(-337 -25)"/>
+</clipPath>
+</defs>
+</svg>

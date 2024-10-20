@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profile</title>
+        <!-- Font Awewsone -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Animation -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+    </head>
+    <body>
+        <!-- PC header -->
+        <header class="header">
+            <div class="header__inner">
+                <div class="header-left">
+                    <div class="header__logo-wrapper">
+                        <img
+                            src="./assets/img/logo.png"
+                            alt=""
+                            class="header__logo"
+                        />
+                    </div>
+                    <p class="header__logo-title">hi@arif.interactive</p>
+                </div>
+                <img
+                    src="./assets/img/avatar.png"
+                    alt=""
+                    class="header__avatar"
+                />
+                <div class="header-right">
+                    <nav class="header-nav">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#!" class="nav__link">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="nav__link">Journey</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="nav__link">Service</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Tablet, Mobile nav -->
+                <div class="mobile-nav hide-on-pc">
+                    <div class="mobile-nav__img-wrap">
+                        <img
+                            src="./assets/icons/mobile-menu-icon.svg"
+                            alt=""
+                            class="mobile-nav__logo"
+                        />
+                    </div>
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <!-- Tablet & Mobile header -->
+        <header class="mobile-header hide-on-pc">
+            <div class="container">
+                <input
+                    type="checkbox"
+                    name=""
+                    id="menu-checkbox"
+                    class="menu-checkbox"
+                    hidden
+                />
+                <!-- Overlay -->
+                <label for="menu-checkbox" class="menu-overlay"></label>
+                <!-- Menu -->
+                <div class="menu-drawer hide-on-pc">
+                    <div class="menu-drawer-top">
+                        <div class="menu-drawer-content">
+                            <div class="header__logo-wrapper">
+                                <img
+                                    src="./assets/img/logo.png"
+                                    alt=""
+                                    class="header__logo"
+                                />
+                            </div>
+                            <p class="header__logo-title">
+                                hi@arif.interactive
+                            </p>
+                        </div>
+                        <label for="menu-checkbox" class="menu-drawer-icon">
+                            <i class="fa-solid fa-xmark"></i>
+                        </label>
+                    </div>
+                    <img
+                        src="./assets/img/avatar.png"
+                        alt=""
+                        class="menu-drawer-avatar"
+                    />
+                    <div class="menu-drawer-list">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#!" class="nav__link">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="nav__link">Journey</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="nav__link">Service</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main -->
+        <main class="main">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-12 col-12 order-2">
+                            <div
+                                class="hero-left"
+                                data-aos="fade-right"
+                                data-aos-delay="500"
+                            >
+                                <div class="hero__img-wrapper">
+                                    <img
+                                        src="./assets/img/hero-img.png"
+                                        alt=""
+                                        class="hero-img"
+                                    />
+                                    <img
+                                        src="./assets/icons/hero-left.svg"
+                                        alt=""
+                                        class="hero-left__decor"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-5 offset-lg-2 col-md-12 offset-md-0 col-12 order-1"
+                        >
+                            <div class="hero-right">
+                                <h1
+                                    class="hero__title"
+                                    data-aos="fade-down"
+                                    data-aos-delay="500"
+                                >
+                                    An Interactive Designer
+                                </h1>
+                                <p
+                                    class="section-desc hero__desc"
+                                    data-aos="fade-left"
+                                    data-aos-delay="500"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                                <div class="hero-cta">
+                                    <a
+                                        href="#!"
+                                        class="btn"
+                                        data-aos="fade-up-right"
+                                        >Book a Call</a
+                                    >
+                                    <a
+                                        href="#!"
+                                        class="hero-btn"
+                                        data-aos="fade-up-left"
+                                        >My Works</a
+                                    >
+                                </div>
+                                <div class="hero-contact">
+                                    <p
+                                        class="hero-contact__desc"
+                                        data-aos="zoom-out-right"
+                                    >
+                                        Follow me on:
+                                    </p>
+                                    <div class="hero-contact-icon">
+                                        <div
+                                            class="hero-contact-item"
+                                            data-aos="zoom-out-left"
+                                        >
+                                            <a href="#!">
+                                                <i class="fa-brands fa-behance">
+                                                </i>
+                                            </a>
+                                        </div>
+                                        <div
+                                            class="hero-contact-item"
+                                            data-aos="zoom-out-left"
+                                            data-aos-delay="200"
+                                        >
+                                            <a href="#!">
+                                                <i
+                                                    class="fa-brands fa-dribbble"
+                                                >
+                                                </i>
+                                            </a>
+                                        </div>
+                                        <div
+                                            class="hero-contact-item"
+                                            data-aos="zoom-out-left"
+                                            data-aos-delay="400"
+                                        >
+                                            <a href="#!">
+                                                <i
+                                                    class="fa-brands fa-instagram"
+                                                >
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img
+                                    src="./assets/icons/hero-right.svg"
+                                    alt=""
+                                    class="hero-right__decor"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Media -->
+            <section class="media">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 offset-lg-1 col-md-12 col-12">
+                            <h1
+                                class="section-heading media__title"
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                            >
+                                Meet my recent clients
+                            </h1>
+                        </div>
+                        <div class="col-lg-7 offset-lg-1 col-md-12 col-12">
+                            <div class="media-list">
+                                <div class="media-list__row">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/icons/Google.svg"
+                                            alt=""
+                                            class="media-row__item"
+                                            data-aos="zoom-in-right"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/icons/warner bros.svg"
+                                            alt=""
+                                            class="media-row__item"
+                                            data-aos="flip-left"
+                                            data-aos-delay="400"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/icons/Mailchamp.svg"
+                                            alt=""
+                                            class="media-row__item"
+                                            data-aos="flip-left"
+                                            data-aos-delay="400"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/icons/Adobe.svg"
+                                            alt=""
+                                            class="media-row__item"
+                                            data-aos="zoom-in-left"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="media-list__row">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/icons/Upwork.svg"
+                                            alt=""
+                                            class="media-row__item"
+                                            data-aos="zoom-in-right"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/icons/Creative-cloude.svg"
+                                            alt=""
+                                            class="media-row__item"
+                                            data-aos="flip-right"
+                                            data-aos-delay="400"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/icons/Woocommercde.svg"
+                                            alt=""
+                                            class="media-row__item"
+                                            data-aos="flip-right"
+                                            data-aos-delay="400"
+                                        />
+                                    </a>
+                                    <a href="">
+                                        <img
+                                            src="./assets/icons/Canva.svg"
+                                            alt=""
+                                            class="media-row__item"
+                                            data-aos="zoom-in-left"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Service -->
+            <section class="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="service-top">
+                                <h1
+                                    class="section-heading"
+                                    data-aos="fade-down"
+                                >
+                                    Specialities
+                                </h1>
+                                <p
+                                    class="section-desc service-desc"
+                                    data-aos="zoom-in"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-list">
+                        <div class="row">
+                            <!-- Item 1 -->
+                            <div class="col-lg-4 col-md-12 col-12">
+                                <article
+                                    class="service-item"
+                                    data-aos="zoom-out-up"
+                                    data-aos-delay="50"
+                                >
+                                    <img
+                                        src="./assets/icons/light.svg"
+                                        alt=""
+                                        class="service-item__icon"
+                                    />
+                                    <h2 class="service-item__title">
+                                        Product design
+                                    </h2>
+                                    <p class="service-item__desc">
+                                        Lorem ipsum dolor sit amet, solor
+                                        adipiscing elit. Non nisl solor ut
+                                        elementum turpis.
+                                    </p>
+                                </article>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="col-lg-4 col-md-12 col-12">
+                                <article
+                                    class="service-item"
+                                    data-aos="flip-left"
+                                    data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="1000"
+                                >
+                                    <img
+                                        src="./assets/icons/tools.svg"
+                                        alt=""
+                                        class="service-item__icon"
+                                    />
+                                    <h2 class="service-item__title">
+                                        UI/UX Design
+                                    </h2>
+                                    <p class="service-item__desc">
+                                        Lorem ipsum dolor sit amet, solor
+                                        adipiscing elit. Non nisl solor ut
+                                        elementum turpis.
+                                    </p>
+                                </article>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="col-lg-4 col-md-12 col-12">
+                                <article
+                                    class="service-item"
+                                    data-aos="zoom-out-up"
+                                    data-aos-delay="50"
+                                >
+                                    <img
+                                        src="./assets/icons/mobile.svg"
+                                        alt=""
+                                        class="service-item__icon"
+                                    />
+                                    <h2 class="service-item__title">
+                                        Interactive design
+                                    </h2>
+                                    <p class="service-item__desc">
+                                        Lorem ipsum dolor sit amet, solor
+                                        adipiscing elit. Non nisl solor ut
+                                        elementum turpis.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Work -->
+            <section class="work">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-12">
+                            <h1
+                                class="section-heading work-heading"
+                                data-aos="fade-right"
+                                data-aos-offset="500"
+                                data-aos-duration="500"
+                            >
+                                Take a look at my recent projects
+                            </h1>
+                        </div>
+                        <div class="col-lg-4 offset-lg-1 col-md-12 col-12">
+                            <p
+                                class="section-desc work-desc"
+                                data-aos="fade-left"
+                                data-aos-offset="500"
+                                data-aos-duration="500"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wokr-project">
+                        <div class="row">
+                            <!-- Item 1 -->
+                            <div class="col-lg-6 col-md-12 col-12">
+                                <div
+                                    class="project-item"
+                                    data-aos="fade-down-right"
+                                >
+                                    <div class="project-info">
+                                        <h2
+                                            class="project-info__title"
+                                            data-text="Wally Website"
+                                        >
+                                            Wally Website
+                                        </h2>
+                                        <p class="project-info__desc">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="#!" class="project-info__link">
+                                            Case Study
+                                        </a>
+                                    </div>
+                                    <figure class="project-img__wrap">
+                                        <img
+                                            src="./assets/img/project-item-1.png"
+                                            alt=""
+                                            class="project-img"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="col-lg-6 col-md-12 col-12">
+                                <div
+                                    class="project-item"
+                                    data-aos="fade-down-left"
+                                >
+                                    <div class="project-info">
+                                        <h2
+                                            class="project-info__title"
+                                            data-text="Banking App"
+                                        >
+                                            Banking App
+                                        </h2>
+                                        <p class="project-info__desc">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="#!" class="project-info__link">
+                                            Case Study
+                                        </a>
+                                    </div>
+                                    <figure class="project-img__wrap">
+                                        <img
+                                            src="./assets/img/project-item-2.png"
+                                            alt=""
+                                            class="project-img"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="col-lg-6 col-md-12 col-12">
+                                <div
+                                    class="project-item mg-top"
+                                    data-aos="fade-up-right"
+                                >
+                                    <div class="project-info">
+                                        <h2
+                                            class="project-info__title"
+                                            data-text="Web App"
+                                        >
+                                            Web App
+                                        </h2>
+                                        <p class="project-info__desc">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="#!" class="project-info__link">
+                                            Case Study
+                                        </a>
+                                    </div>
+                                    <figure class="project-img__wrap">
+                                        <img
+                                            src="./assets/img/project-item-3.png"
+                                            alt=""
+                                            class="project-img"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="col-lg-6 col-md-12 col-12">
+                                <div
+                                    class="project-item mg-top"
+                                    data-aos="fade-up-left"
+                                >
+                                    <div class="project-info">
+                                        <h2
+                                            class="project-info__title"
+                                            data-text="Oculus Website"
+                                        >
+                                            Oculus Website
+                                        </h2>
+                                        <p class="project-info__desc">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="#!" class="project-info__link">
+                                            Case Study
+                                        </a>
+                                    </div>
+                                    <figure class="project-img__wrap">
+                                        <img
+                                            src="./assets/img/project-item-4.png"
+                                            alt=""
+                                            class="project-img"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a
+                        href="#!"
+                        class="btn work-btn"
+                        data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"
+                        >All Projects</a
+                    >
+                </div>
+            </section>
+            <!-- About -->
+            <section class="about">
+                <div class="container">
+                    <div class="about-top">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="sub-content">
+                                    <p
+                                        class="about-sub-title"
+                                        data-aos="zoom-in-left"
+                                    >
+                                        Hey,,,,It’s Arif
+                                    </p>
+                                </div>
+                                <h1
+                                    class="section-heading"
+                                    data-aos="flip-down"
+                                    data-aos-delay="300"
+                                >
+                                    Interactive Designer
+                                </h1>
+                                <p
+                                    class="section-desc about-desc"
+                                    data-aos="zoom-in-right"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statistical-wrap">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                                <div class="statistical">
+                                    <div class="row">
+                                        <div
+                                            class="col-lg-4 col-md-4 col-4 order-2"
+                                        >
+                                            <div
+                                                class="statistical-item"
+                                                data-aos="fade-up-right"
+                                            >
+                                                <span
+                                                    class="statistical-item__total"
+                                                >
+                                                    08+
+                                                </span>
+                                                <p
+                                                    class="statistical-item__desc"
+                                                >
+                                                    Years Experience
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-lg-4 col-md-4 col-4 order-1"
+                                        >
+                                            <div
+                                                class="statistical-item"
+                                                data-aos="zoom-in"
+                                                data-aos-delay="200"
+                                            >
+                                                <span
+                                                    class="statistical-item__total"
+                                                >
+                                                    21+
+                                                </span>
+                                                <p
+                                                    class="statistical-item__desc"
+                                                >
+                                                    Features & Awards
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-lg-4 col-md-4 col-4 order-2"
+                                        >
+                                            <div
+                                                class="statistical-item"
+                                                data-aos="fade-up-left"
+                                            >
+                                                <span
+                                                    class="statistical-item__total"
+                                                >
+                                                    97%
+                                                </span>
+                                                <p
+                                                    class="statistical-item__desc"
+                                                >
+                                                    Clients Rating
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-video">
+                        <div class="row">
+                            <div class="col-12">
+                                <div
+                                    class="video-wrap"
+                                    data-aos="flip-left"
+                                    data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000"
+                                >
+                                    <video
+                                        src="./assets/video/NƠI NÀY CÓ ANH - OFFICIAL MUSIC VIDEO - SƠN TÙNG M-TP.mp4"
+                                        poster="./assets/img/video.png"
+                                        class="about-video__media"
+                                        id="about-video"
+                                    ></video>
+                                    <span
+                                        class="intro-video-btn"
+                                        data-aos="flip-right"
+                                        data-aos-delay="1500"
+                                    >
+                                        Intro Video
+                                    </span>
+                                    <button
+                                        class="video-play"
+                                        id="video-play"
+                                        data-aos="zoom-out"
+                                        data-aos-delay="1500"
+                                    >
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Blog -->
+            <section class="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="blog__inner">
+                                <h1
+                                    class="section-heading blog-heading"
+                                    data-aos="fade-right"
+                                >
+                                    What people says
+                                </h1>
+                                <p
+                                    class="section-desc blog-desc"
+                                    data-aos="fade-left"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                                <blockquote
+                                    class="feeback"
+                                    data-aos="fade-up"
+                                    data-aos-delay="300"
+                                >
+                                    “Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa.”
+                                </blockquote>
+                                <div class="blog-info">
+                                    <div class="blog-info-content">
+                                        <img
+                                            src="./assets/img/blog-avatar.png"
+                                            alt=""
+                                            class="blog-info__img"
+                                            data-aos="fade-up-right"
+                                            data-aos-anchor-placement="bottom-bottom"
+                                        />
+                                        <h2
+                                            class="blog-info__name"
+                                            data-aos="fade-up-left"
+                                            data-aos-anchor-placement="bottom-bottom"
+                                        >
+                                            Joe Elia
+                                        </h2>
+                                    </div>
+                                    <p
+                                        class="blog-info__desc"
+                                        data-aos="zoom-in-up"
+                                    >
+                                        User Interface Design at PCL Lab
+                                    </p>
+                                </div>
+                                <div class="dots">
+                                    <span
+                                        class="dot__item"
+                                        data-aos="fade-left"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="100"
+                                    ></span>
+                                    <span
+                                        class="dot__item"
+                                        data-aos="fade-left"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="300"
+                                    ></span>
+                                    <span
+                                        class="dot__item active"
+                                        data-aos="fade-left"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="500"
+                                    ></span>
+                                    <span
+                                        class="dot__item"
+                                        data-aos="fade-left"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="700"
+                                    ></span>
+                                    <span
+                                        class="dot__item"
+                                        data-aos="fade-left"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="900"
+                                    ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Faq -->
+            <section class="faq">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-md-12 col-12">
+                            <div class="faq__inner">
+                                <h1
+                                    class="section-heading faq-heading"
+                                    data-aos="zoom-in"
+                                    data-aos-anchor-placement="center-center"
+                                >
+                                    A few questions clients&nbsp;normally ask me
+                                </h1>
+                                <div class="faq-list">
+                                    <!-- Item 1 -->
+                                    <div class="faq-item">
+                                        <input
+                                            type="checkbox"
+                                            class="faq-check"
+                                            hidden
+                                        />
+                                        <div class="faq-item__content">
+                                            <h2
+                                                class="faq-item__title"
+                                                data-aos="fade-right"
+                                                data-aos-anchor-placement="top-center"
+                                            >
+                                                What is your hourly rate?
+                                            </h2>
+                                            <label
+                                                class="faq-item__icon"
+                                                data-aos="fade-left"
+                                                data-aos-anchor-placement="top-center"
+                                            >
+                                                <i class="fa-solid fa-plus"></i>
+                                            </label>
+                                        </div>
+                                        <p class="faq-item__desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                        <span
+                                            class="line-bottom"
+                                            data-aos="fade-up"
+                                            data-aos-anchor-placement="top-center"
+                                        ></span>
+                                    </div>
+
+                                    <!-- Item 2 -->
+                                    <div class="faq-item">
+                                        <input
+                                            type="checkbox"
+                                            class="faq-check"
+                                            hidden
+                                        />
+                                        <div class="faq-item__content">
+                                            <h2
+                                                class="faq-item__title"
+                                                data-aos="fade-right"
+                                                data-aos-anchor-placement="top-center"
+                                            >
+                                                What type of projects do you
+                                                take on?
+                                            </h2>
+                                            <label
+                                                class="faq-item__icon"
+                                                data-aos="fade-left"
+                                                data-aos-anchor-placement="top-center"
+                                            >
+                                                <i class="fa-solid fa-plus"></i>
+                                            </label>
+                                        </div>
+                                        <p class="faq-item__desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                        <span
+                                            class="line-bottom"
+                                            data-aos="fade-up"
+                                            data-aos-anchor-placement="top-center"
+                                        ></span>
+                                    </div>
+                                    <!-- Item 3 -->
+                                    <div class="faq-item">
+                                        <input
+                                            type="checkbox"
+                                            class="faq-check"
+                                            hidden
+                                        />
+                                        <div class="faq-item__content">
+                                            <h2
+                                                class="faq-item__title"
+                                                data-aos="fade-right"
+                                                data-aos-anchor-placement="top-center"
+                                            >
+                                                How do you charge for projects ?
+                                            </h2>
+                                            <label
+                                                class="faq-item__icon"
+                                                data-aos="fade-left"
+                                                data-aos-anchor-placement="top-center"
+                                            >
+                                                <i class="fa-solid fa-plus"></i>
+                                            </label>
+                                        </div>
+                                        <p class="faq-item__desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                        <span
+                                            class="line-bottom"
+                                            data-aos="fade-up"
+                                            data-aos-anchor-placement="top-center"
+                                        ></span>
+                                    </div>
+                                    <!-- Item 4 -->
+                                    <div class="faq-item">
+                                        <input
+                                            type="checkbox"
+                                            class="faq-check"
+                                            hidden
+                                        />
+                                        <div class="faq-item__content">
+                                            <h2
+                                                class="faq-item__title"
+                                                data-aos="fade-right"
+                                                data-aos-anchor-placement="top-center"
+                                            >
+                                                What time-zone do you work in?
+                                            </h2>
+                                            <label
+                                                class="faq-item__icon"
+                                                data-aos="fade-left"
+                                                data-aos-anchor-placement="top-center"
+                                            >
+                                                <i class="fa-solid fa-plus"></i>
+                                            </label>
+                                        </div>
+                                        <p class="faq-item__desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                        <span
+                                            class="line-bottom"
+                                            data-aos="fade-up"
+                                            data-aos-anchor-placement="top-center"
+                                        ></span>
+                                    </div>
+                                    <!-- Item 5 -->
+                                    <div class="faq-item">
+                                        <input
+                                            type="checkbox"
+                                            class="faq-check"
+                                            hidden
+                                        />
+                                        <div class="faq-item__content">
+                                            <h2
+                                                class="faq-item__title"
+                                                data-aos="fade-right"
+                                                data-aos-anchor-placement="top-center"
+                                            >
+                                                How often can we communicate?
+                                            </h2>
+                                            <label
+                                                class="faq-item__icon"
+                                                data-aos="fade-left"
+                                                data-aos-anchor-placement="top-center"
+                                            >
+                                                <i class="fa-solid fa-plus"></i>
+                                            </label>
+                                        </div>
+                                        <p class="faq-item__desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                        <span
+                                            class="line-bottom"
+                                            data-aos="fade-up"
+                                            data-aos-anchor-placement="top-center"
+                                        ></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Gallery -->
+            <section class="gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="gallery-top">
+                                <h1
+                                    class="section-heading gallery-heading"
+                                    data-aos="zoom-out-up"
+                                    data-aos-anchor-placement="bottom-center"
+                                >
+                                    My atmosphere
+                                </h1>
+                                <p
+                                    class="section-desc gallery-desc"
+                                    data-aos="flip-left"
+                                    data-aos-easing="ease-out-cubic"
+                                    data-aos-anchor-placement="bottom-center"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                                <p
+                                    class="gallery-sub__desc"
+                                    data-aos="flip-up"
+                                    data-aos-anchor-placement="bottom-center"
+                                >
+                                    @interaction_arif
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-list">
+                        <div class="row gallery-row">
+                            <div class="col-lg-4 col-md-12 col-12">
+                                <div
+                                    class="gallery-item"
+                                    data-aos="zoom-in-right"
+                                    data-aos-anchor-placement="top-center"
+                                >
+                                    <a href="#!" class="gallery-item__link">
+                                        <img
+                                            src="./assets/img/gallery-01.png"
+                                            alt=""
+                                            class="gallery-item__img"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-12">
+                                <div
+                                    class="gallery-item"
+                                    data-aos="flip-right"
+                                    data-aos-anchor-placement="top-center"
+                                >
+                                    <a href="#!" class="gallery-item__link">
+                                        <img
+                                            src="./assets/img/gallery-02.png"
+                                            alt=""
+                                            class="gallery-item__img"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-12">
+                                <div
+                                    class="gallery-item"
+                                    data-aos="zoom-in-left"
+                                    data-aos-anchor-placement="top-center"
+                                >
+                                    <a href="#!" class="gallery-item__link">
+                                        <img
+                                            src="./assets/img/gallery-03.png"
+                                            alt=""
+                                            class="gallery-item__img"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots hide-on-pc">
+                            <span
+                                class="dot__item"
+                                data-aos="fade-right"
+                                data-aos-anchor-placement="center-bottom"
+                                data-aos-delay="100"
+                            ></span>
+                            <span
+                                class="dot__item"
+                                data-aos="fade-right"
+                                data-aos-anchor-placement="center-bottom"
+                                data-aos-delay="300"
+                            ></span>
+                            <span
+                                class="dot__item active"
+                                data-aos="fade-right"
+                                data-aos-anchor-placement="center-bottom"
+                                data-aos-delay="500"
+                            ></span>
+                            <span
+                                class="dot__item"
+                                data-aos="fade-right"
+                                data-aos-anchor-placement="center-bottom"
+                                data-aos-delay="700"
+                            ></span>
+                            <span
+                                class="dot__item"
+                                data-aos="fade-right"
+                                data-aos-anchor-placement="center-bottom"
+                                data-aos-delay="900"
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Cta -->
+            <section class="cta">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
+                            <div class="cta__inner">
+                                <div class="cta-img__wrap" data-aos="fade-down">
+                                    <img
+                                        src="./assets/img/cta-icon.png"
+                                        alt=""
+                                        class="cta-img"
+                                    />
+                                </div>
+                                <h1
+                                    class="section-heading cta-heading"
+                                    data-aos="zoom-out-right"
+                                >
+                                    Got a project? Let’s talk
+                                </h1>
+                                <p
+                                    class="desc cta-desc"
+                                    data-aos="zoom-out-left"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                                <a href="#!" class="btn" data-aos="fade-up"
+                                    >Book a Call</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__row">
+                    <div class="footer-left order-3 mt">
+                        <div
+                            class="footer__logo-wrapper"
+                            data-aos="fade-right"
+                            data-aos-delay="200"
+                        >
+                            <img
+                                src="./assets/img/logo.png"
+                                alt=""
+                                class="footer__logo"
+                            />
+                        </div>
+                        <p class="footer__logo-title" data-aos="fade-right">
+                            hi@arif.interactive
+                        </p>
+                    </div>
+                    <img
+                        src="./assets/img/avatar.png"
+                        alt=""
+                        class="footer__avatar order-1"
+                        data-aos="zoom-in-down"
+                    />
+                    <div class="footer-right order-2">
+                        <nav class="footer-nav">
+                            <ul class="footer-list">
+                                <li>
+                                    <a
+                                        href="#!"
+                                        class="nav__link"
+                                        data-aos="fade-left"
+                                    >
+                                        Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#!"
+                                        class="nav__link"
+                                        data-aos="fade-left"
+                                        data-aos-delay="200"
+                                    >
+                                        Journey
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#!"
+                                        class="nav__link"
+                                        data-aos="fade-left"
+                                        data-aos-delay="400"
+                                    >
+                                        Service
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#!"
+                                        class="nav__link"
+                                        data-aos="fade-left"
+                                        data-aos-delay="600"
+                                    >
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="footer-bottom-wrap">
+                            <p class="footer-bottom__desc">
+                                ©interactiveArif 2021. All rights reserved.
+                            </p>
+                            <div class="footer-bottom__item">
+                                <p class="footer-bottom__desc">
+                                    Privacy Policy
+                                </p>
+                                <p class="footer-bottom__desc">
+                                    Terms of Conditions
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+            let faqItems = document.querySelectorAll(".faq-item");
+            let playVideo = document.getElementById("video-play");
+            let video = document.getElementById("about-video");
+            let introBtn = document.querySelector(".intro-video-btn ");
+
+            faqItems.forEach(function (item) {
+                let checkbox = item.querySelector(".faq-check");
+                let desc = item.querySelector(".faq-item__desc");
+                let label = item.querySelector(".faq-item__icon");
+                let title = item.querySelector(".faq-item__title");
+                let lineBottom = item.querySelector(".line-bottom");
+
+                label.addEventListener("click", function () {
+                    checkbox.checked = !checkbox.checked;
+                    if (checkbox.checked) {
+                        desc.style.display = "block";
+                        title.style.color = "#5d3bee";
+                        label.innerHTML = '<i class="fa-solid fa-minus"></i>';
+                        lineBottom.style.backgroundColor = "#5d3bee";
+                    } else {
+                        desc.style.display = "none";
+                        title.style.color = "#080415";
+                        label.innerHTML = '<i class="fa-solid fa-plus"></i>';
+                        lineBottom.style.backgroundColor = "#08182f";
+                    }
+                });
+            });
+
+            playVideo.addEventListener("click", function () {
+                video.play();
+                playVideo.style.display = "none";
+                setTimeout(() => {
+                    introBtn.style.opacity = "0";
+                    introBtn.style.visibility = "hidden";
+                }, 3000);
+            });
+
+            video.addEventListener("click", () => {
+                video.pause();
+                playVideo.style.display = "block";
+                introBtn.style.opacity = "1";
+                introBtn.style.visibility = "visible";
+            });
+        </script>
+    </body>
+</html>

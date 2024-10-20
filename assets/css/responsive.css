@@ -1,0 +1,380 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .hide-on-pc {
+        display: none;
+    }
+    .order-1 {
+        order: 0;
+    }
+
+    .order-2 {
+        order: 0;
+    }
+
+    .order-3 {
+        order: 0;
+    }
+
+    .mt {
+        margin-top: 0;
+    }
+
+    .statistical-item {
+        margin-left: 44px;
+    }
+}
+
+/* Tablet & Moible */
+@media screen and (max-width: 991px) {
+    .header {
+        width: 100%;
+    }
+
+    .header__inner {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .header-left {
+        display: none;
+    }
+
+    .header__avatar {
+        margin-left: 0;
+    }
+
+    .mobile-nav {
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .toggle-menu,
+    .mobile-nav__img-wrap {
+        display: block;
+        width: 48px;
+        height: 48px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .toggle-menu i {
+        color: #5d3bee;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transform: 0.25s ease;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        padding: 40px;
+        inset: 0 40% 0 0;
+        z-index: 2;
+        background: #fff;
+        transform: translateX(-100%);
+        transition: 0.25s ease;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .menu-drawer-avatar {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .menu-drawer-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-drawer-content {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .menu-drawer-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 2.8rem;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-drawer-list {
+        margin-top: 60px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .hero__title {
+        margin-top: 20px;
+    }
+
+    .hero-left__decor {
+        width: 100%;
+        display: none;
+    }
+
+    .hero-right {
+        margin-top: 0;
+        margin-left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-right__decor {
+        display: none;
+    }
+
+    .media__title {
+        margin: 0 auto;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .media__title::before {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .media-list {
+        margin-top: 42px;
+    }
+
+    .service-item {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .work-desc {
+        text-align: center;
+    }
+
+    .project-item {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .faq-item {
+        padding-left: 0;
+    }
+
+    .gallery-row {
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .gallery-item {
+        margin: 0 auto;
+    }
+
+    .statistical::before,
+    .statistical::after {
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer__row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__avatar {
+        margin-left: 0;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .mt {
+        margin-top: 0;
+    }
+}
+
+/* Moblie */
+@media screen and (max-width: 767px) {
+    .hero-left {
+        height: 355px;
+    }
+    .hero__title {
+        font-size: 4.2rem;
+        line-height: 1.19;
+        letter-spacing: -1.68px;
+    }
+
+    .hero__img-wrapper {
+        width: 100%;
+    }
+
+    .hero-img {
+        display: block;
+        margin: 0 auto;
+        width: 260px;
+        height: 355px;
+        object-fit: cover;
+    }
+
+    .hero__title {
+        width: 260px;
+    }
+
+    .media-list__row {
+        margin-left: 18px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+
+    .service-desc {
+        width: 100%;
+    }
+
+    .work-heading {
+        text-align: center;
+    }
+
+    .work-desc {
+        width: 100%;
+    }
+
+    .project-item {
+        width: 100%;
+        padding: 20px 15px;
+        justify-content: space-between;
+    }
+
+    .project-info__title {
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 1.42;
+        letter-spacing: -0.96px;
+    }
+
+    .project-info__desc {
+        width: 176px;
+        font-size: 1.4rem;
+        line-height: 1.42;
+    }
+
+    .project-img__wrap {
+        width: 122px;
+        height: 93px;
+    }
+
+    .about-desc {
+        width: 350px;
+    }
+
+    .hero__desc,
+    .feeback,
+    .cta-desc,
+    .blog-desc {
+        width: 350px;
+    }
+
+    .service-item {
+        margin-bottom: 30px;
+    }
+
+    .video-play {
+        width: 66px;
+        height: 66px;
+        top: 34%;
+    }
+
+    .intro-video-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        font-size: 1rem;
+        height: 44px;
+    }
+
+    .faq__inner {
+        margin-left: 20px;
+    }
+
+    .faq-heading {
+        font-size: 3.6rem;
+        width: 300px;
+    }
+
+    .faq-item__title,
+    .faq-item__desc {
+        width: 265px;
+    }
+
+    .faq-item__icon {
+        margin-right: 10px;
+    }
+
+    .statistical-item {
+        width: 84px;
+    }
+
+    .gallery-desc {
+        width: 350px;
+    }
+
+    .menu-drawer {
+        inset: 0;
+    }
+
+    .order-1 {
+        order: 1;
+    }
+
+    .order-2 {
+        order: 2;
+    }
+
+    .order-3 {
+        order: 3;
+    }
+
+    .mt {
+        margin-top: 58px;
+    }
+
+    .footer-bottom-wrap {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+}
