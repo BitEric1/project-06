@@ -3,6 +3,10 @@
 ::after {
     box-sizing: border-box;
 }
+/* 
+* {
+    outline: 1px solid red;
+} */
 
 :root {
 }
@@ -14,6 +18,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "DM Sans", serif;
+    overflow-x: hidden;
 }
 
 input,
@@ -78,14 +83,8 @@ a {
 
 
 /* Header */
-.footer,
-.header {
-    width: 1330px;
-    margin: 0 auto;
-}
 
 .header {
-    width: 100%;
     position: sticky;
     top: 0;
     background: #fff;
@@ -94,6 +93,9 @@ a {
 
 .footer__row,
 .header__inner {
+    max-width: 1330px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -593,9 +595,9 @@ a {
 
 .video-play {
     position: absolute;
-    top: 48%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     width: 111px;
     height: 111px;
     border: none;

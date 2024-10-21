@@ -26,11 +26,11 @@
 
 /* Tablet & Moible */
 @media screen and (max-width: 991px) {
-    .header {
-        width: 100%;
+    body {
+        overflow-x: hidden;
     }
-
     .header__inner {
+        width: 100%;
         border-bottom: 1px solid #ccc;
     }
 
@@ -175,8 +175,10 @@
     }
 
     .service-item {
-        text-align: center;
-        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .work-desc {
@@ -189,6 +191,7 @@
     }
 
     .faq-item {
+        width: 100%;
         padding-left: 0;
     }
 
@@ -198,6 +201,7 @@
     }
 
     .gallery-item {
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -206,7 +210,8 @@
         width: 100%;
     }
 
-    .footer {
+    .footer,
+    .footer__row {
         width: 100%;
     }
 
@@ -238,6 +243,18 @@
         letter-spacing: -1.68px;
     }
 
+    .mobile-nav {
+        margin-right: 20px;
+    }
+
+    .menu-drawer {
+        padding: 20px;
+    }
+
+    .nav__link {
+        padding: 0 12px;
+    }
+
     .hero__img-wrapper {
         width: 100%;
     }
@@ -255,8 +272,8 @@
     }
 
     .media-list__row {
-        margin-left: 18px;
-        grid-template-columns: 1fr 1fr;
+        margin-left: 8px;
+        grid-template-columns: 0.8fr 1fr;
         row-gap: 20px;
     }
 
@@ -327,7 +344,7 @@
     }
 
     .faq__inner {
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
 
     .faq-heading {
